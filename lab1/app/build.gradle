@@ -19,5 +19,16 @@ dependencies {
 }
 
 application {
-    mainClass = 'src.main.java.calculator.App'
+    mainClass = 'src.main.java.app.App'
+}
+
+run {
+    standardInput = System.in
+    standardOutput = System.out
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'src.main.java.app.App'
+    }
 }
