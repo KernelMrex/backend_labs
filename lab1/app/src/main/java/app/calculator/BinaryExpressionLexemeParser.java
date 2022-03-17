@@ -7,7 +7,7 @@ import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class BinaryExpressionLexemeParser
+final public class BinaryExpressionLexemeParser
 {
     private static final String LEXEME_REGEX = "(-?\\d+\\.?\\d*)\s*([+\\-*])\s*(-?\\d+\\.?\\d*)";
 
